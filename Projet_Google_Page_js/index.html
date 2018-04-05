@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="sheetStyle.css">
+	<link rel="shortcut icon" href="titleLogo.ico" />
+	<title>Google</title>
+</head>
+<body>
+	<header>
+		<div id="navBarDiv"> <!-- Barre de Navigation en tête de page -->
+			<ul> <!-- Création d'une liste -->
+				<li><a href="">Gmail</a></li> <!-- balise "a" pour lien hypertexte -->
+				<li><a href="">Images</a></li>
+				<li><a href="" title="Google apps"><img src="googleAppli.png" title="Google apps" id="buttonAppli"></img></a></li>
+				<li><a href="" id="buttonSignIn">Sign in</a></li>
+			</ul>
+		</div>
+	</header>
+	<div id="divButtonHideShow"><!-- Bouton d'accès -->
+		<input id="buttonHideShow" type="button" value="AFFICHER LES ELEMENTS CENTRAUX" onclick="hideBeforeClick();" />
+	</div>
+	<div id="content">
+		<img src="googleLogo.png"> <!-- Ajout Image Logo central -->
+		<div id="inputSearchContener">
+			<form id="googleForm">
+				<input type="text" id="inputSearch" title="Search" name="searchGoogle" autofocus> <!-- Ajout de la barre de recherche -->
+			</form>
+		</div>
+		<div id="buttonSearch">
+			<input type="submit" class="submitButton" value="Google Search" onclick="googleSearch()"></input> <!-- Ajout du bouton "Google Search" -->
+			<input type="submit" class="submitButton" value="I'm Feeling Lucky" onclick="googleSearch()"></input> <!-- Ajout du bouton "Feeling lucky" -->
+		</div>
+		<div id="textLangage">
+			<p>Google offered in: <a href="">Français</a></p> <!-- Ajout du texte "Google offered ..." -->
+		</div>
+	</div>
+	<footer id="footer"> <!-- Pied de page -->
+		<div id="footerContenuTop">
+			<span>France</span>
+		</div>
+		<div id="footerBorder">
+			<div id="footerContenuBot">
+				<span><a href="" class="footList">Advertising</a> <!-- balise span pour effet sur ligne -->
+					<a href="" class="footList">Business</a>
+						<a href="" class="footList">About</a></span>
+			</div>
+		</div>
+		<div id="footerContenuBotBis">
+			<span><a href="" class="footList">Consumer Information</a>
+				<a href="" class="footList">Privacy</a>
+					<a href="" class="footList">Terms</a>
+						<a href="" class="footList">Settings</a></span>
+		</div>
+	</footer>
+	<script type="text/javascript" src="googleJavasScript.js"></script>
+</body>
+</html>
